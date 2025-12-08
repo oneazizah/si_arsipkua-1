@@ -1,0 +1,75 @@
+/* === STYLE LIST ARSIP BUKU NIKAH === */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+}
+
+.arsip-card {
+    border-radius: 16px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: .2s;
+}
+
+.arsip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.akta-badge {
+    background: #1d72f3;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.card-sub {
+    color: #555;
+}
+
+.action-btns a, .action-btns button {
+    margin-right: 5px;
+}
+
+/* === STYLE TAMBAHAN LIST === */
+.table thead th {
+    background: #f5f6f8;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f8ff !important;
+}
+
+.badge-akta {
+    background: #1d72f3;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.action-btns a, .action-btns button {
+    margin-right: 5px;
+}
+
+.search-card {
+    border-radius: 16px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 22px;
+}

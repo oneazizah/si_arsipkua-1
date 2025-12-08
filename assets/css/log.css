@@ -1,0 +1,110 @@
+/* === LOG ACTIVITIES STYLE === */
+.page-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* ==== TIMELINE STYLE ==== */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    animation: pulseLine 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseLine {
+    0% { opacity: .4; }
+    50% { opacity: 1; }
+    100% { opacity: .4; }
+}
+
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 22px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -32px;
+    top: 14px;
+    width: 14px;
+    height: 14px;
+    background: #1d72f3;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.t-time {
+    font-size: 12px;
+    color: #777;
+    font-weight: 600;
+}
+
+.t-body {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.badge-ip {
+    background: #ff8b3d;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* ==== SEARCH CARD ==== */
+.search-box {
+    background: #ffffff;
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* ==== DARK MODE ==== */
+@media (prefers-color-scheme: dark) {
+    body { background: #0e141a !important; color: #e7eef5 !important; }
+    .timeline::before { background: #2da8ff !important; }
+    .timeline-item { background: #1b2733 !important; box-shadow: 0 4px 25px rgba(0,0,0,0.7) !important; }
+    .t-body { color: #dce7ef !important; }
+    .t-time { color: #9db4c8 !important; }
+    .timeline-marker { background: #2da8ff !important; border-color: #1b2733 !important; }
+    .search-box { background: #1b2733 !important; }
+}
+
+/* ANIMASI TIMELINE ITEMS */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-item {
+    animation: fadeSlideUp 0.5s ease-out forwards;
+    opacity: 0;
+}

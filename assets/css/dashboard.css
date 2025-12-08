@@ -1,0 +1,13 @@
+/* ================================
+   DASHBOARD
+================================ */
+.dashboard-card {
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.bg-total { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+.bg-pria { background: linear-gradient(45deg, #11998e, #38ef7d); }
+.bg-wanita { background: linear-gradient(45deg, #fc4a1a, #f7b733); }
+.bg-file { background: linear-gradient(45deg, #00b4db, #0083b0); }

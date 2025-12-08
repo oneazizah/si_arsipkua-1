@@ -1,0 +1,60 @@
+.form-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0;
+    color: #1d3557;
+    border-bottom: 2px solid #e8ecf1;
+    margin-bottom: 15px;
+}
+
+.input-label {
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.form-control-lg {
+    height: 48px;
+    font-size: 16px;
+}
+
+.upload-box {
+    border: 2px dashed #b3b9c4;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.upload-box:hover {
+    background: #f3f5f9;
+}
+
+.upload-box i {
+    font-size: 40px;
+    color: #457b9d;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btn-secondary {
+    border-radius: 10px;
+}
+
+.card-section {
+    border-left: 5px solid #0d6efd;
+    padding-left: 12px;
+    margin-top: 20px;
+}
